@@ -19,7 +19,7 @@ typedef struct s_hashmap{
 //*******************
 //FONCTIONS HASHMAP *
 //*******************
-t_hashmap* hashmap_create(int slots, float lf, float gf);//Create a new hashmap
+t_hashmap* hashmap_create(int slots);//Create a new hashmap
 
 int hashmap_hashcode(char* key, int slots);//Hash Fonction
 
@@ -39,8 +39,5 @@ void* hashmap_traverse(t_hashmap* map, char* path);// Traverse a HashMap accordi
 void hashmap_put(t_hashmap*map, char* path, void* value);// Traverse a HashMap according to the given path
 // Ex : hashmap_put(map, 'student.rate', 56);
 // hashmap_traverse(map, 'student.rate')    56
-
-
-void testHash();
 
 #endif
